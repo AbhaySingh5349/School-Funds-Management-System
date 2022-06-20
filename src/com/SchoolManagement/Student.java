@@ -15,11 +15,26 @@ public class Student {
         this.totalFess = 30000;
     }
 
+    public int getStu_id() {
+        return stu_id;
+    }
+
+    public String getStu_name() {
+        return stu_name;
+    }
+
+    public String getGrade() {
+        return grade;
+    }
+
+    public int getFeesPaid() {
+        return feesPaid;
+    }
+
     // updating students grade
     public void updateGrade(String grade) {
         this.grade = grade;
     }
-
     public void updateFeesPaid(int fees) {
         this.feesPaid += fees;
     }

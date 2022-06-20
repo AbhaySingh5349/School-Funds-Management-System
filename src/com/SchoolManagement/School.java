@@ -7,13 +7,13 @@ public class School {
     private List<Teacher> teacherList = new ArrayList<>();
     private List<Student> studentList = new ArrayList<>();
 
-    private int earnings, expense;
+    public static int totalEarnings, totalExpense;
 
     public School(List<Teacher> teacherList, List<Student> studentList) {
         this.teacherList = teacherList;
         this.studentList = studentList;
-        earnings=0;
-        expense=0;
+        totalEarnings=0;
+        totalExpense=0;
     }
 
     public List<Teacher> getTeacherList() {
@@ -33,18 +33,18 @@ public class School {
     }
 
     public int getEarnings() {
-        return earnings;
+        return totalEarnings;
     }
 
-    public void updateEarnings(int earnings) {
-        this.earnings += earnings;
+    public static void updateEarnings(int earnings) {
+        totalEarnings += earnings;
     }
 
     public int getExpense() {
-        return expense;
+        return totalExpense;
     }
 
-    public void updateExpense(int expense) {
-        this.expense -= expense;
+    public static void updateExpense(int expense) {
+        totalExpense -= expense;
     }
 }
